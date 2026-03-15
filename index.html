@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="layout">
+
+        <header id="header">
+
+            <nav class="navbar" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Subscribe</a></li>
+                </ul>
+            </nav>
+
+            <h1>Science Discovery Conference</h1>
+            <p>Subscribe to receive updates about upcoming science talks and workshops.</p>
+
+        </header>
+
+        <aside class="sidebar">
+
+            <h2>Menu</h2>
+
+            <ul>
+                <li><a href="#">Upcoming Events</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Workshops</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </aside>
+
+        <main id="main-content" class="content">
+
+            <section class="mediaItems">
+
+                <h2>Join Our Mailing List</h2>
+
+                <p>
+                    Stay informed about science conferences, research talks, and new discoveries.
+                </p>
+
+                <img src="images/this_is_engineering-engineering-4922794_1280.jpg"
+                    alt="Laboratory equipment used in scientific research">
+
+            </section>
+
+            <form action="https://formspree.io/f/mjgaoeqy" method="POST">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="section">Course Section</label>
+                <select id="section" name="section" required>
+                    <option value="">Select Section</option>
+                    <option value="001">Section 001</option>
+                    <option value="002">Section 002</option>
+                    <option value="003">Section 003</option>
+                </select>
+
+                <fieldset>
+                    <legend>Reason for Contact</legend>
+
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="Question" required>
+                            <span>Question</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="Feedback">
+                            <span>Feedback</span>
+                        </label>
+
+                        <label class="radio-option">
+                            <input type="radio" name="reason" value="Help">
+                            <span>Need Help</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Subscribe</button>
+                
+            </form>
+
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 Science Discovery Conference</p>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
